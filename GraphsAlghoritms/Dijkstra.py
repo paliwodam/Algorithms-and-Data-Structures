@@ -2,7 +2,7 @@ from math import inf
 from queue import PriorityQueue
 
 
-def Dikstra(G, s):
+def Dijkstra(G, s):
     V = G[0]
     E = G[1]
 
@@ -39,5 +39,5 @@ E = [[-1, 2, -1, -1, 1],
      [-1, 1, 5, -1, 3],
      [1, -1, -1, 3, -1]]
 
-Dikstra((V, E), 0)
+Dijkstra((V, E), 0)
 

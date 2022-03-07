@@ -3,7 +3,7 @@ from queue import PriorityQueue
 from random import seed, randint
 
 
-def rozwiazanie(G, start, end):
+def BobAndAlicia(G, start, end):
     ALICE = 0
     BOB = 1
 
@@ -82,7 +82,7 @@ G1 = [
     [(2, 1), (1, 1)],
     [(1, 100)],
 ]
-answ1 = rozwiazanie(G1, 0, 4)
+answ1 = BobAndAlicia(G1, 0, 4)
 print("G1: długość:", answ1[0], "trasa:", answ1[1])
 
 # A --7-- C --9-- D
@@ -96,7 +96,7 @@ G2 = [
     [(0, 7), (1, 6), (3, 9)],
     [(2, 9)],
 ]
-answ2 = rozwiazanie(G2, 0, 3)
+answ2 = BobAndAlicia(G2, 0, 3)
 print("G2: długość:", answ2[0], "trasa:", answ2[1])
 
 
@@ -154,7 +154,7 @@ def check_with_brute(G):
     ans = min(brute_force(G, 0, len(G)-1, visited, 0, 0),
               brute_force(G, 0, len(G)-1, visited, 1, 0))
 
-    ans2 = rozwiazanie(G, 0, len(G)-1)[0]
+    ans2 = BobAndAlicia(G, 0, len(G) - 1)[0]
 
     if ans != ans2:
         print(ans, ans2)

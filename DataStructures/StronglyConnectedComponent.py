@@ -1,4 +1,4 @@
-def Silnie_spojne_skladowe(E):
+def StronglyConnectedComponent(E):
     n = len(E)
     visited = [False for _ in range(n)]
     d = [None] * n
@@ -48,4 +48,4 @@ E = [[0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
      [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]]
 
 
-Silnie_spojne_skladowe(E)
+StronglyConnectedComponent(E)

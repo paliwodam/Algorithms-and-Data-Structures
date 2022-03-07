@@ -1,7 +1,7 @@
 from math import inf
 
 
-def Mosty(E):
+def Bridges(E):
     n = len(E)
     visited = [False for _ in range(n)]
     parent = [None for _ in range(n)]
@@ -44,4 +44,4 @@ E = [[0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0],
      [0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0],
      [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]]
 
-Mosty(E)
+Bridges(E)

@@ -138,7 +138,7 @@ def FordFulkerson2(G, source, sink):
     return max_float
 
 
-def skojarzenia_w_drzewie(G, s):
+def matchingInTree(G, s):
     V = G[0]
     E = G[1]
 
@@ -195,4 +195,4 @@ v = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #  / \   |
 # 8   9  10
 
-print(skojarzenia_w_drzewie((v, e), 0))
+print(matchingInTree((v, e), 0))
