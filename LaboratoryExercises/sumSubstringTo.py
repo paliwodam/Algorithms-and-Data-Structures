@@ -1,4 +1,4 @@
-def suma_podciągu(A, t):
+def substring_sum_to(A, t):
     n = len(A)
     F = [[False] * (t+1) for _ in range(n)]
 
@@ -20,5 +20,5 @@ s = 14
 # s = 14 #true
 # s = 7 #false
 
-suma_podciągu(T, 7)
-suma_podciągu(T, 14)
+substring_sum_to(T, 7)
+substring_sum_to(T, 14)

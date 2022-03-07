@@ -1,4 +1,4 @@
-def pojemniki(T, V):
+def containers(T, V):
     n = len(T)
     Y = [0] * (2 * n)
 
@@ -43,4 +43,4 @@ V = 46
 # dla V = 12 res 1
 # dla V = 11 res 0
 
-print(pojemniki(T, V))
+print(containers(T, V))

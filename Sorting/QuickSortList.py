@@ -44,7 +44,7 @@ def quickSort(first):
     else:
         lastLeft.next = middle
 
-    # pivot jest ostatnim elementem środka
+    # pivot is the last element od center
     if firstRight is None:
         lastRight = pivot
     else:
@@ -70,7 +70,7 @@ def tab2list(A):
 
 
 def printlist(L):
-    while L != None:
+    while L is not None:
         print(L.value, "->", end=" ")
         L = L.next
     print("|")
@@ -82,21 +82,21 @@ n = 10
 T = [randint(1, 10) for i in range(10)]
 L = tab2list(T)
 
-print("przed sortowaniem: L =", end=" ")
+print("Before sorting: L =", end=" ")
 printlist(L)
 L = qsort(L)
-print("po sortowaniu    : L =", end=" ")
+print("After sorting    : L =", end=" ")
 printlist(L)
 
-if L == None:
-    print("List jest pusta, a nie powinna!")
+if L is None:
+    print("List is empty, shouldn't be!")
     exit(0)
 
 P = L
 
-while P.next != None:
+while P.next is not None:
     if P.value > P.next.value:
-        print("Błąd sortowania")
+        print("Sort error")
         exit(0)
     P = P.next
 

@@ -1,4 +1,4 @@
-def getMaxLengh(T):
+def getMaxLength(T):
     max_n = 0
     for i in T:
         if i > max_n:
@@ -17,7 +17,7 @@ def getDigit(num, idx):
 
 
 def radixSort(T):
-    L = getMaxLengh(T)
+    L = getMaxLength(T)
     for i in range(1, L+1):
         countSort(T, i)
 

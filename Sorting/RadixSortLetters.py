@@ -1,4 +1,4 @@
-def get_max_lengh(T):
+def get_max_length(T):
     L = 0
     for i in T:
         if len(i) > L:
@@ -7,7 +7,7 @@ def get_max_lengh(T):
 
 
 def radixSort(T):
-    L = get_max_lengh(T)
+    L = get_max_length(T)
     for i in range(L-1, -1, -1):
         countSort(T, i)
 

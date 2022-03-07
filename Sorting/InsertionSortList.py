@@ -4,7 +4,7 @@ class Node:
         self.value = None
 
 
-def getmax(first):
+def get_max(first):
     max = first.next
     max_prev = first
     q = first
@@ -36,14 +36,14 @@ def insertion_sort(first):
     wart.next = first
     result = None
     while wart.next is not None:
-        max = getmax(wart)
+        max = get_max(wart)
         max.next = result
         result = max
     return result
 
 
 def printlist(L):
-    while L != None:
+    while L is not None:
         print(L.value, "->", end=" ")
         L = L.next
     print("|")

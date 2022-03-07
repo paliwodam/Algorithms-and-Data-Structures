@@ -10,5 +10,5 @@ def binsearch(A, x):
             r = m - 1
         else:
             return m
-    print("nie da się")
+    print("The list does not contain", x)
     return -1

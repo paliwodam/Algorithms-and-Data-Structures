@@ -35,13 +35,13 @@ seed(42)
 n = 10
 T = [randint(1, 10) for i in range(10)]
 
-print("przed sortowaniem: T =", T)
+print("Before sorting: T =", T)
 T = mergesort(T)
-print("po sortowaniu    : T =", T)
+print("After sorting    : T =", T)
 
 for i in range(len(T)-1):
     if T[i] > T[i+1]:
-        print("Błąd sortowania!")
+        print("Sort error!")
         exit()
 
 print("OK")
